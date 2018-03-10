@@ -30,7 +30,7 @@ public String toString(){
 }
 public boolean equals(Object obj){
 	if(obj==null) return false;
-	if((this.getClass()!=obj.getClass())) return false;
+	if((getClass()!=obj.getClass())) return false;
 	Computer c = (Computer) obj;
 	return (this.manufacturer.equals(c.manufacturer) && this.processor.equals(c.processor) && this.ramSize==c.ramSize && this.diskSize==c.diskSize && this.processorSpeed==c.processorSpeed);
 }
